@@ -3,10 +3,13 @@
     width: 40px;
 }
 .huruf-samping{
-    font-size: 16px;
+    font-size: 12px;
 }
 #button-in{
     width: 200px;
     height: 40px;
     border-radius: 25px;
+}
+.bold{
+    font-weight: bold;
 }
