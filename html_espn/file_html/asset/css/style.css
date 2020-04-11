@@ -12,4 +12,8 @@
 }
 .bold{
     font-weight: bold;
+    border-bottom: 2px;
+    border-bottom-color: black !important;
+    
 }
+
