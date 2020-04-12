@@ -1,91 +1,10 @@
-<!DOCTYPE html>
-    <html>
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>ESPN: Serving Sports fans. Anytime. Anywhere</title>
-            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-            <!-- JS, Popper.js, and jQuery -->
-            <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-            <link rel="stylesheet" href="./file_html/asset/css/style.css">
-        </head>
-        <!-- Header  -->
-        <body>
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                <div >
-                        <a class="navbar-brand important" href=""><img src="./file_html/asset/images/logo-espn-82x20.png"></a>
-                    </div>
-                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                        <div class="navbar-nav mr-auto">
-                            <a class="nav-item nav-link" href=""><div data-toggle="dropdown" aria-haspopup="false" aria-expanded="false"> Footbal <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">Action</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">Another action</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">Something else here</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">Separated link</a> </div></div></a>
+{% extends 'base.html'%}
 
-                            <a class="nav-item nav-link" href=""> <div data-toggle="dropdown" aria-haspopup="false" aria-expanded="false"> NBA <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">Action</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">Another action</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">Something else here</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">Separated link</a> </div></div></a>
+{% load static%}
+{% block content%}
 
-                            <a class="nav-item nav-link" href=""><div data-toggle="dropdown" aria-haspopup="false" aria-expanded="false"> NFL <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">Action</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">Another action</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">Something else here</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">Separated link</a> </div></div></a>
-
-                            <a class="nav-item nav-link" href=""><div data-toggle="dropdown" aria-haspopup="false" aria-expanded="false"> Cricket <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">Action</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">Another action</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">Something else here</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">Separated link</a> </div></div></a>
-
-                            <a class="nav-item nav-link" href=""><div data-toggle="dropdown" aria-haspopup="false" aria-expanded="false"> Rugby <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">Action</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">Another action</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">Something else here</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">Separated link</a> </div></div></a>
-
-                            <a class="nav-item nav-link" href=""><div data-toggle="dropdown" aria-haspopup="false" aria-expanded="false"> Golf <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">Action</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">Another action</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">Something else here</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">Separated link</a> </div></div></a>
-                        </div>
-                        <div class="navbar-nav ml-auto">
-                            <a class="nav-item nav-link" href="">Watch</a>
-                            <a class="nav-item nav-link" href="">Fantasy</a>
-                            <form class="form-inline my-2 my-lg-0" method="GET">
-                                <input class="form-control" type="search" placeholder="Search" aria-label="Search" name="Title">
-                                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                            </form>
-                        </div>
-                    </div>
-                
-            </nav>
         <!-- awal background -->
-        <div class="container-fluid bg-light"> 
+        <div class="container-fluid "> 
             <div class="row">
                 <!-- membuat kolom sebelah kiri -->
                 <div class="col-3">
@@ -97,25 +16,25 @@
                                     <td > Quick Links</td>
                                 </tr>
                                 <tr>
-                                    <td class=" huruf-samping"> <img class="gambar-ikon p-1" src="./file_html/asset/images/i_030.png" alt="">FOX Sports / ESPN FAQ</td>
+                                    <td class=" huruf-samping"> <img class="gambar-ikon p-1" src="{%static 'images/fox-faq.png'%}" alt="">FOX Sports / ESPN FAQ</td>
                                 </tr>
                                 <tr>
-                                    <td class=" huruf-samping"> <img class="gambar-ikon p-1" src="./file_html/asset/images/i_022.png" alt="">Premier League</td>
+                                    <td class=" huruf-samping"> <img class="gambar-ikon p-1" src="{%static 'images/premier-league.png'%}" alt="">Premier League</td>
                                 </tr>
                                 <tr>
-                                    <td class=" huruf-samping"> <img class="gambar-ikon p-1" src="./file_html/asset/images/i_023.png" alt="">NBA 2K20 Tournament</td>
+                                    <td class=" huruf-samping"> <img class="gambar-ikon p-1" src="{%static 'images/logo-nba.png'%}" alt="">NBA 2K20 Tournament</td>
                                 </tr>
                                 <tr>
-                                    <td class=" huruf-samping"> <img class="gambar-ikon p-1" src="./file_html/asset/images/i_041.png" alt="">The Last Dance</td>
+                                    <td class=" huruf-samping"> <img class="gambar-ikon p-1" src="{%static 'images/last-dance.png'%}" alt="">The Last Dance</td>
                                 </tr>
                                 <tr>
-                                    <td class=" huruf-samping"> <img class="gambar-ikon p-1" src="./file_html/asset/images/i_039.png" alt="">2020 NFL Draft</td>
+                                    <td class=" huruf-samping"> <img class="gambar-ikon p-1" src="{%static 'images/draft.png'%}" alt="">2020 NFL Draft</td>
                                 </tr>
                                 <tr>
-                                    <td class=" huruf-samping"> <img class="gambar-ikon p-1" src="./file_html/asset/images/i_034.png" alt="">ESPNCrclinfo</td>
+                                    <td class=" huruf-samping"> <img class="gambar-ikon p-1" src="{%static 'images/circle.png'%}" alt="">ESPNCrclinfo</td>
                                 </tr>
                                 <tr>
-                                    <td class=" huruf-samping"> <img class="gambar-ikon p-1" src="./file_html/asset/images/i_046.png" alt="">ESPN Daily Podcast</td>
+                                    <td class=" huruf-samping"> <img class="gambar-ikon p-1" src="{%static 'images/podcast.png'%}" alt="">ESPN Daily Podcast</td>
                                 </tr>
                             </table>
                         </div>
@@ -199,22 +118,22 @@
                                 </tr>
                                 
                                 <tr>
-                                    <td class=" huruf-samping"> <img class="gambar-ikon p-1" src="./file_html/asset/images/i_047.png" alt="">ESPN Deportes</td>
+                                    <td class=" huruf-samping"> <img class="gambar-ikon p-1" src="{%static 'images/espn-icon.png'%}" alt="">ESPN Deportes</td>
                                 </tr>
                                 <tr>
-                                    <td class=" huruf-samping"> <img class="gambar-ikon p-1" src="./file_html/asset/images/i.png" alt="">The Undefeated</td>
+                                    <td class=" huruf-samping"> <img class="gambar-ikon p-1" src="{%static 'images/undefeated.png'%}" alt="">The Undefeated</td>
                                 </tr>
                                 <tr>
-                                    <td class=" huruf-samping"> <img class="gambar-ikon p-1" src="./file_html/asset/images/i_048.png" alt="">espnW</td>
+                                    <td class=" huruf-samping"> <img class="gambar-ikon p-1" src="{%static 'images/espnW.png'%}" alt="">espnW</td>
                                 </tr>
                                 <tr>
-                                    <td class=" huruf-samping"> <img class="gambar-ikon p-1" src="./file_html/asset/images/i_049.png" alt="">ESPNFC</td>
+                                    <td class=" huruf-samping"> <img class="gambar-ikon p-1" src="{%static 'images/espnFC.png'%}" alt="">ESPNFC</td>
                                 </tr>
                                 <tr>
-                                    <td class=" huruf-samping"> <img class="gambar-ikon p-1" src="./file_html/asset/images/i_005.png" alt="">X Games</td>
+                                    <td class=" huruf-samping"> <img class="gambar-ikon p-1" src="{%static 'images/xgames.png'%}" alt="">X Games</td>
                                 </tr>
                                 <tr>
-                                    <td class=" huruf-samping"> <img class="gambar-ikon p-1" src="./file_html/asset/images/i_037.png" alt="">SEC Network</td>
+                                    <td class=" huruf-samping"> <img class="gambar-ikon p-1" src="{%static 'images/sec.png'%}" alt="">SEC Network</td>
                                 </tr>
                             </table>
                         </div>
@@ -226,10 +145,10 @@
                                 <tr class="bold huruf-samping"> 
                                     <td > Editions</td>
                                 </tr>
-                                <tr>
-                                    <td >
+                                <tr class="huruf-samping d-flex justify-content-center">
+                                    <td class="p-3">
                                         <!-- Example single danger button -->
-                                        <div class="btn-group">
+                                        <div class="btn-group ">
                                             <button id="button-in" type="button" class="btn btn-outline-dark dropdown-toggle" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false">
                                             Select Editions
                                             </button>
@@ -258,25 +177,25 @@
                                     <td >Follow ESPN</td>
                                 </tr>
                                 <tr>
-                                    <td class=" huruf-samping"> <img class="gambar-ikon p-1" src="./file html/asset/images/i_030.png" alt="">Facebook</td>
+                                    <td class=" huruf-samping"> <img class="gambar-ikon p-1" src="{%static 'images/facebook.png'%}" alt="">Facebook</td>
                                 </tr>
                                 <tr>
-                                    <td class=" huruf-samping"> <img class="gambar-ikon p-1" src="./file html/asset/images/i_022.png" alt="">Twitter</td>
+                                    <td class=" huruf-samping"> <img class="gambar-ikon p-1" src="{%static 'images/logo-twitter.png'%}" alt="">Twitter</td>
                                 </tr>
                                 <tr>
-                                    <td class=" huruf-samping"> <img class="gambar-ikon p-1" src="./file html/asset/images/i_023.png" alt="">Instagram</td>
+                                    <td class=" huruf-samping"> <img class="gambar-ikon p-1" src="{%static 'images/instagram.png'%}" alt="">Instagram</td>
                                 </tr>
                                 <tr>
-                                    <td class=" huruf-samping"> <img class="gambar-ikon p-1" src="./file html/asset/images/i_041.png" alt="">Snapchat</td>
+                                    <td class=" huruf-samping"> <img class="gambar-ikon p-1" src="{%static 'images/snapchat.png'%}" alt="">Snapchat</td>
                                 </tr>
                                 <tr>
-                                    <td class=" huruf-samping"> <img class="gambar-ikon p-1" src="./file html/asset/images/i_039.png" alt="">You Tube</td>
+                                    <td class=" huruf-samping"> <img class="gambar-ikon p-1" src="{%static 'images/youtube.png'%}" alt="">You Tube</td>
                                 </tr>
                                 <tr>
-                                    <td class=" huruf-samping"> <img class="gambar-ikon p-1" src="./file html/asset/images/i_034.png" alt="">The ESPN Daily News Letter</td>
+                                    <td class=" huruf-samping"> <img class="gambar-ikon p-1" src="{%static 'images/espn-letter.png'%}" alt="">The ESPN Daily News Letter</td>
                                 </tr>
                                 <tr>
-                                    <td class=" huruf-samping"> <img class="gambar-ikon p-1" src="./file html/asset/images/i_046.png" alt="">ESPN Daily Calendar</td>
+                                    <td class=" huruf-samping"> <img class="gambar-ikon p-1" src="{%static 'images/espn-calendar.png'%}" alt="">ESPN Daily Calendar</td>
                                 </tr>
                             </table>
                         </div>
@@ -285,126 +204,82 @@
                 <!-- membuat kolom tengah -->
                 <div class="col-6"> 
                     <div class="container-fluid">
-                       <div class="bg-white rounded pl-0 pt-1 pr-0 mt-3 ml-0 mr-0">
+                        <div class="bg-white rounded pl-0 pt-1 pr-0 mt-3 ml-0 mr-0">
                             <div>
                                 <div>
-                                    <img src="./file_html/asset/images/i_010.png" alt="" class="float-left gambar-ikon p-2 !important">
+                                    <img src="{%static 'images/warriors.png'%}" alt="" class="float-left gambar-ikon p-2 !important">
                                 </div>
                                 <div>
                                     <a class="float-right p-2" href="">See all</a>
                                 </div>
+                                
+                                <div>
+                                    <img src="{%static 'images/curry.jpg'%}" class="rounded-top img-fluid p-2 !important" alt="">
+                                </div>
+                                <div class="p-2">
+                                    <h5>House Party, tactics, new babies: Inside Arsenal's lockdown</h5>
+                                    <p class="huruf-samping">It's been nearly a month since the Premier League Shutdown due to corona virus. Here's what player doing to keep fit and busy at Arsenal. <br>
+                                    21h &bull; nama</p>
+                                </div>                 
                             </div>
-                            <div>
-                                <img src="./file_html/asset/images/int_200408_Watchfolder_INET_FC_BEST_TRANSFERS_EVER.jpg" class="rounded-top img-fluid p-2 !important" alt="">
+                        <div class="card rounded-top">
+                            <video width="100%" controls> <source src="{%static 'images/kobe.mp4'%}"> </video>
+                            <div class="card-body">
+                            <h5 class="card-title">Best of Kobe's</h5>
+                            <p class="card-text huruf-samping"> Remembering Kobe's greatest career <br> 16hr</p>
                             </div>
-                            <div class="p-2">
-                                <h3>House Party, tactics, new babies: Inside Arsenal's lockdown</h3>
-                                <p>It's been nearly a month since the Premier League Shutdown due to corona virus. Here's what player doing to keep fit and busy at Arsenal. <br>
-                                21h &bull; nama</p>
-                            </div>
-                        </div>
+                        </div> 
+                    </div>  
                     </div>    
                     <div class="container-fluid">
-                        <div class="bg-white rounded mt-3 ">
-                            <div>
-                                <div>
-                                    <img src="./file_html/asset/images/i_010.png" alt="" class="float-left gambar-ikon p-2 !important">
-                                </div>
-                                <div>
-                                    <a class="float-right p-2" href="">See all</a>
-                                </div>
-                            </div>
-                            <div>
-                                <img src="./file_html/asset/images/int_200408_Watchfolder_INET_FC_BEST_TRANSFERS_EVER.jpg" class="rounded-top img-fluid p-2 !important" alt="">
-                            </div>
-                            <div class="p-2">
-                                <h3>House Party, tactics, new babies: Inside Arsenal's lockdown</h3>
-                                <p>It's been nearly a month since the Premier League Shutdown due to corona virus. Here's what player doing to keep fit and busy at Arsenal. <br>
-                                21h &bull; nama</p>
-                            </div>
-                        </div>
-                    </div>
+                        <div class="bg-white rounded pl-0 pt-1 pr-0 mt-3 ml-0 mr-0">
+                             <div>
+                                 <div>
+                                     <img src="{%static 'images/arsenal.png'%}" alt="" class="float-left gambar-ikon p-2 !important">
+                                 </div>
+                                 <div>
+                                     <a class="float-right p-2" href="">See all</a>
+                                 </div>
+                             </div>
+                             <div>
+                                 <img src="{%static 'images/henry-arsenal.jpg'%}" class="rounded-top img-fluid p-2 !important" alt="">
+                             </div>
+                             <div class="p-2">
+                                 <h5>House Party, tactics, new babies: Inside Arsenal's lockdown</h5>
+                                 <p class="huruf-samping">It's been nearly a month since the Premier League Shutdown due to corona virus. Here's what player doing to keep fit and busy at Arsenal. <br>
+                                 21h &bull; nama</p>
+                             </div>
+                         </div>
+                    </div>    
                     <div class="container-fluid">
-                        <div class="bg-white rounded mt-3 ">
-                            <div>
-                                <div>
-                                    <img src="./file_html/asset/images/i_010.png" alt="" class="float-left gambar-ikon p-2 !important">
-                                </div>
-                                <div>
-                                    <a class="float-right p-2" href="">See all</a>
-                                </div>
-                            </div>
-                            <div>
-                                <img src="./file_html/asset/images/int_200408_Watchfolder_INET_FC_BEST_TRANSFERS_EVER.jpg" class="rounded-top img-fluid p-2 !important" alt="">
-                            </div>
-                            <div class="p-2">
-                                <h3>House Party, tactics, new babies: Inside Arsenal's lockdown</h3>
-                                <p>It's been nearly a month since the Premier League Shutdown due to corona virus. Here's what player doing to keep fit and busy at Arsenal. <br>
-                                21h &bull; nama</p>
+                        <div class="card rounded-top">
+                            <video width="100%" controls> <source src="{%static 'images/gerrard-slip.mp4'%}"> </video>
+                            <div class="card-body">
+                            <h5 class="card-title">Steven Gerrard slip cost liverpool title's</h5>
+                            <p class="card-text"> Livervool fans around the world crying over Gerrard slip. <br> 16hr</p>
                             </div>
                         </div>
-                    </div>
-                    <div class="container-fluid">
-                        <div class="bg-white rounded mt-3 ">
-                            <div>
-                                <div>
-                                    <img src="./file_html/asset/images/i_010.png" alt="" class="float-left gambar-ikon p-2 !important">
-                                </div>
-                                <div>
-                                    <a class="float-right p-2" href="">See all</a>
-                                </div>
-                            </div>
-                            <div>
-                                <img src="./file_html/asset/images/int_200408_Watchfolder_INET_FC_BEST_TRANSFERS_EVER.jpg" class="rounded-top img-fluid p-2 !important" alt="">
-                            </div>
-                            <div class="p-2">
-                                <h3>House Party, tactics, new babies: Inside Arsenal's lockdown</h3>
-                                <p>It's been nearly a month since the Premier League Shutdown due to corona virus. Here's what player doing to keep fit and busy at Arsenal. <br>
-                                21h &bull; nama</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="container-fluid">
-                        <div class="bg-white rounded mt-3 ">
-                            <div>
-                                <div>
-                                    <img src="./file_html/asset/images/i_010.png" alt="" class="float-left gambar-ikon p-2 !important">
-                                </div>
-                                <div>
-                                    <a class="float-right p-2" href="">See all</a>
-                                </div>
-                            </div>
-                            <div>
-                                <img src="./file_html/asset/images/int_200408_Watchfolder_INET_FC_BEST_TRANSFERS_EVER.jpg" class="rounded-top img-fluid p-2 !important" alt="">
-                            </div>
-                            <div class="p-2">
-                                <h3>House Party, tactics, new babies: Inside Arsenal's lockdown</h3>
-                                <p>It's been nearly a month since the Premier League Shutdown due to corona virus. Here's what player doing to keep fit and busy at Arsenal. <br>
-                                21h &bull; nama</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="container-fluid">
-                        <div class="bg-white rounded mt-3 ">
-                            <div>
-                                <div>
-                                    <img src="./file_html/asset/images/i_010.png" alt="" class="float-left gambar-ikon p-2 !important">
-                                </div>
-                                <div>
-                                    <a class="float-right p-2" href="">See all</a>
-                                </div>
-                            </div>
-                            <div>
-                                <img src="./file_html/asset/images/int_200408_Watchfolder_INET_FC_BEST_TRANSFERS_EVER.jpg" class="rounded-top img-fluid p-2 !important" alt="">
-                            </div>
-                            <div class="p-2">
-                                <h3>House Party, tactics, new babies: Inside Arsenal's lockdown</h3>
-                                <p>It's been nearly a month since the Premier League Shutdown due to corona virus. Here's what player doing to keep fit and busy at Arsenal. <br>
-                                21h &bull; nama</p>
-                            </div>
-                        </div>
-                    </div>
-                   
+                     </div>    
+                     <div class="container-fluid">
+                        <div class="bg-white rounded pl-0 pt-1 pr-0 mt-3 ml-0 mr-0">
+                             <div>
+                                 <div>
+                                     <img src="{%static 'images/arsenal.png'%}" alt="" class="float-left gambar-ikon p-2 !important">
+                                 </div>
+                                 <div>
+                                     <a class="float-right p-2" href="">See all</a>
+                                 </div>
+                             </div>
+                             <div>
+                                 <img src="{%static 'images/henry-arsenal.jpg'%}" class="rounded-top img-fluid p-2 !important" alt="">
+                             </div>
+                             <div class="p-2">
+                                 <h5>House Party, tactics, new babies: Inside Arsenal's lockdown</h5>
+                                 <p class="huruf-samping">It's been nearly a month since the Premier League Shutdown due to corona virus. Here's what player doing to keep fit and busy at Arsenal. <br>
+                                 21h &bull; nama</p>
+                             </div>
+                         </div>
+                     </div>    
                 </div>
                 <!-- membuat kolom kanan -->
                 <div class="col-3">
@@ -446,7 +321,7 @@
                                     <td class="bold">Sponsored Content</td>
                                 </tr>
                                 <tr>
-                                    <td> <img src="./file_html/asset/images/int_200409_Aston_Villa_player_smashes_window_whilst_training.jpg" alt=""></td>
+                                    <td> <img src="{%static 'images/neymar.jpg'%}" class="img-fluid" alt=""></td>
                                 </tr>
                                 <tr>
                                     <td class="huruf-samping"> &bull; Liverpool legend Dalglish tests positive for virus</td>
@@ -472,156 +347,5 @@
                     </div>
                 </div>
             </div>
-            <!-- membuat footer -->
-       
-            <div class="container-fluid bg-white rounded p-2 mb-5 mt-3">
-                <div class="row">
-                    <div class="col">
-                        <table>
-                            <tr class="bold huruf-samping"> 
-                                <td > Quick Links</td>
-                            </tr>
-                            <tr>
-                                <td class=" huruf-samping"> <img class="gambar-ikon p-1" src="./file_html/asset/images/i_030.png" alt="">FOX Sports / ESPN FAQ</td>
-                            </tr>
-                            <tr>
-                                <td class=" huruf-samping"> <img class="gambar-ikon p-1" src="./file_html/asset/images/i_022.png" alt="">Premier League</td>
-                            </tr>
-                            <tr>
-                                <td class=" huruf-samping"> <img class="gambar-ikon p-1" src="./file_html/asset/images/i_023.png" alt="">NBA 2K20 Tournament</td>
-                            </tr>
-                            <tr>
-                                <td class=" huruf-samping"> <img class="gambar-ikon p-1" src="./file_html/asset/images/i_041.png" alt="">The Last Dance</td>
-                            </tr>
-                            <tr>
-                                <td class=" huruf-samping"> <img class="gambar-ikon p-1" src="./file_html/asset/images/i_039.png" alt="">2020 NFL Draft</td>
-                            </tr>
-                            <tr>
-                                <td class=" huruf-samping"> <img class="gambar-ikon p-1" src="./file_html/asset/images/i_034.png" alt="">ESPNCrclinfo</td>
-                            </tr>
-                            <tr>
-                                <td class=" huruf-samping"> <img class="gambar-ikon p-1" src="./file_html/asset/images/i_046.png" alt="">ESPN Daily Podcast</td>
-                            </tr>
-                        </table>
-                    </div>
-                    <div class="col">
-                        <table>
-                            <tr>
-                                <td class="font-style="border-bottom: 2px; border-color: black;" weigth-bold huruf-samping"> ESPN Sites</td>
-                            </tr>
-                            <tr>
-                                <td class=" huruf-samping"> <img class="gambar-ikon p-1" src="file html/asset/images/i_030.png" alt="">ESPN Deportes</td>
-                            </tr>
-                            <tr>
-                                <td class=" huruf-samping"> <img class="gambar-ikon p-1" src="file html/asset/images/i_022.png" alt="">The Undefeated</td>
-                            </tr>
-                            <tr>
-                                <td class=" huruf-samping"> <img class="gambar-ikon p-1" src="file html/asset/images/i_023.png" alt="">espnW</td>
-                            </tr>
-                            <tr>
-                                <td class=" huruf-samping"> <img class="gambar-ikon p-1" src="file html/asset/images/i_041.png" alt="">ESPNFC</td>
-                            </tr>
-                            <tr>
-                                <td class=" huruf-samping"> <img class="gambar-ikon p-1" src="file html/asset/images/i_039.png" alt="">X Games</td>
-                            </tr>
-                            <tr>
-                                <td class=" huruf-samping"> <img class="gambar-ikon p-1" src="file html/asset/images/i_034.png" alt="">SEC Network</td>
-                            </tr>
-                        </table>
-                    </div>
-                    <div class="col">
-                        <table>
-                            <tr class="bold huruf-samping"> 
-                                <td > Editions</td>
-                            </tr>
-                            <tr>
-                                <td >
-                                    <!-- Example single danger button -->
-                                    <div class="btn-group">
-                                        <button id="button-in" type="button" class="btn btn-outline-dark dropdown-toggle" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false">
-                                        Select Editions
-                                        </button>
-                                        <div class="dropdown-menu">
-                                        <a class="dropdown-item" href="#">Action</a>
-                                        <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item" href="#">Another action</a>
-                                        <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item" href="#">Something else here</a>
-                                        <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item" href="#">Separated link</a>
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
-                       
-                        </table>
-                    </div>
-                    <div class="col">
-                        <table>
-                            <tr>
-                                <td class="bold huruf-samping ">Follow ESPN</td>
-                            </tr>
-                            <tr>
-                                <td class=" huruf-samping"> <img class="gambar-ikon p-1" src="./file html/asset/images/i_030.png" alt="">Facebook</td>
-                            </tr>
-                            <tr>
-                                <td class=" huruf-samping"> <img class="gambar-ikon p-1" src="./file html/asset/images/i_022.png" alt="">Twitter</td>
-                            </tr>
-                        </table>
-                    </div>
-                    <div class="col">
-                        <table>
-                            <tr class="bold huruf-samping"> 
-                                <td >Follow ESPN</td>
-                            </tr>
-                            <tr>
-                                <td class=" huruf-samping"> <img class="gambar-ikon p-1" src="./file html/asset/images/i_030.png" alt="">Facebook</td>
-                            </tr>
-                            <tr>
-                                <td class=" huruf-samping"> <img class="gambar-ikon p-1" src="./file html/asset/images/i_022.png" alt="">Twitter</td>
-                            </tr>
-                            <tr>
-                                <td class=" huruf-samping"> <img class="gambar-ikon p-1" src="./file html/asset/images/i_023.png" alt="">Instagram</td>
-                            </tr>
-                            <tr>
-                                <td class=" huruf-samping"> <img class="gambar-ikon p-1" src="./file html/asset/images/i_041.png" alt="">Snapchat</td>
-                            </tr>
-                            <tr>
-                                <td class=" huruf-samping"> <img class="gambar-ikon p-1" src="./file html/asset/images/i_039.png" alt="">You Tube</td>
-                            </tr>
-                            <tr>
-                                <td class=" huruf-samping"> <img class="gambar-ikon p-1" src="./file html/asset/images/i_034.png" alt="">The ESPN Daily News Letter</td>
-                            </tr>
-                            <tr>
-                                <td class=" huruf-samping"> <img class="gambar-ikon p-1" src="./file html/asset/images/i_046.png" alt="">ESPN Daily Calendar</td>
-                            </tr>
-                        </table>
-                    </div>
-                </div>
-                <div style="border-top: 95%;"></div>
-                <div class="row">
-                    <div class="col-4 p-2">
-                        <img src="./file_html/asset/images/espn-404@2x.png" style="float: right; height: 23px; width: 87px;" alt="">
-                    </div>
-                    <div class="col-6">
-                        <div class="row">
-                            <div class="col-2">
-                                <span class="huruf-samping"> <u>Term of Use</u> </span>
-                            </div>
-                            <div class="col-2">
-                                <span class="huruf-samping"> <u>Privacy Policy</u> </span>
-                            </div>
-                            <div class="col-4">
-                                <span class="huruf-samping"> <u>Children's Online Privacy Policy</u> </span>
-                            </div>
-                            <div class="col-3">
-                                <span class="huruf-samping"> <u>Interest-based Ads</u> </span>
-                            </div>
-                        </div>
-                        <div class="huruf-samping"> &copy; 2020 ESPN Enterprises, Inc. All rights reserved.</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </body>
-</html>
+            {% endblock %}
+        

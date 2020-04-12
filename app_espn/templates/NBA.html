@@ -1,0 +1,403 @@
+{% extends 'base.html'%}
+
+{% load static%}
+{% block content%}
+            <div class="container-fluid bg-light"> 
+                <div class="row">
+                    <!-- membuat kolom sebelah kiri -->
+                    <div class="col-3">
+                        <!-- membuat football topics -->
+                        <div class=" ">
+                            <div class="bg-white rounded pl-1 pt-1 pr-0 mt-3 ml-3 mr-0">
+                                <table>
+                                    <tr class="bold huruf-samping"> 
+                                        <td > Quick Links</td>
+                                    </tr>
+                                    <tr>
+                                        <td class=" huruf-samping"> <img class="gambar-ikon p-1" src="{%static 'images/logo-nba.png'%}" alt="">NBA HORSE Challenge</td>
+                                    </tr>
+                                    <tr>
+                                        <td class=" huruf-samping"> <img class="gambar-ikon p-1" src="{%static 'images/logo-nba.png'%}" alt="">NBA 2K20 Tournament</td>
+                                    </tr>
+                                    <tr>
+                                        <td class=" huruf-samping"> <img class="gambar-ikon p-1" src="{%static 'images/last-dance.png'%}" alt="">HoF Class of 2020</td>
+                                    </tr>
+                                    <tr>
+                                        <td class=" huruf-samping"> <img class="gambar-ikon p-1" src="{%static 'images/last-dance.png'%}" alt="">The last Dance</td>
+                                    </tr>
+                                    <tr>
+                                        <td class=" huruf-samping"> <img class="gambar-ikon p-1" src="{%static 'images/logo-nba.png'%}" alt="">Remembering Kobe</td>
+                                    </tr>
+                                    <tr>
+                                        <td class=" huruf-samping"> <img class="gambar-ikon p-1" src="{%static 'images/logo-nba.png'%}" alt="">NBA.com</td>
+                                    </tr>
+                                </table>
+                            </div>
+            
+                        </div>
+                        <!-- customise ESPN -->
+                    <div class=" ">
+                        <div class="bg-white rounded pl-1 pt-1 pr-0 mt-3 ml-3 mr-0">
+                            <table style="width: 100%;">
+                                <tr class="bold huruf-samping"> 
+                                    <td > Customise ESPN </td>
+                                </tr>
+                                <tr>
+                                    <td class=" huruf-samping pb-2 d-flex align-items-center justify-content-center">
+                                        <!-- Button trigger modal -->
+                                        <button type="button" id="button-in" class="btn btn-primary " data-toggle="modal" data-target="#exampleModalScrollable">
+                                          Sign Up
+                                        </button>
+                                        
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+                                          <div class="modal-dialog modal-dialog-scrollable" role="document">
+                                            <div class="modal-content">
+                                              <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalScrollableTitle">Modal title</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                  <span aria-hidden="true">&times;</span>
+                                                </button>
+                                              </div>
+                                              <div class="modal-body">
+                                                ...
+                                              </div>
+                                              <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                <button type="button" class="btn btn-primary">Sign Up</button>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="huruf-samping pb-2 d-flex align-items-center justify-content-center ">
+                                        <!-- Button trigger modal -->
+                                        <button type="button" id="button-in" class="btn btn-outline-primary  " data-toggle="modal" data-target="#exampleModalScrollable">
+                                        Log In
+                                        </button>
+                                        
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-scrollable" role="document">
+                                            <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalScrollableTitle">Modal title</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                ...
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                <button type="button" class="btn btn-primary">Log In</button>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        </div>   
+                                    </td>
+                                </tr>    
+                            </table>
+                        </div>
+                    </div>
+                        <!-- membuat Football podcasts -->
+                        <div class=" ">
+                            <div class="bg-white rounded pl-1 pt-1 pr-0 mt-3 ml-3 mr-0 ">
+                                <table>
+                                    <tr class="bold huruf-samping"> 
+                                        <td > Podcasts</td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td class=" huruf-samping"> <img class="gambar-ikon p-1" src="{%static 'images/bola.png'%}" alt="">ESPN FC TV</td>
+                                    </tr>
+                                    <tr>
+                                        <td class=" huruf-samping"> <img class="gambar-ikon p-1" src="{%static 'images/bola.png'%}" alt="">Caught Offside</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <!-- membuat NBA fantasy -->
+                        <div class=" ">
+                            <div class="bg-white rounded pl-1 pt-1 pr-0 mt-3 ml-3 mr-0 ">
+                                <table>
+                                    <tr class="bold huruf-samping"> 
+                                        <td > Fanstasy</td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td class=" huruf-samping"> <img class="gambar-ikon p-1" src="{%static 'images/logo-streak.png'%}" alt="">Streak</td>
+                                    </tr>
+                                    <tr>
+                                        <td class=" huruf-samping"> <img class="gambar-ikon p-1" src="{%static 'images/logo-basketball.png'%}" alt="">Basketball</td>
+                                    </tr>
+                                    <tr>
+                                        <td class=" huruf-samping"> <img class="gambar-ikon p-1" src="{%static 'images/logo-baseball.png'%}" alt="">Baseball</td>
+                                    </tr>
+                                    <tr>
+                                        <td class=" huruf-samping"> <img class="gambar-ikon p-1" src="{%static 'images/logo-hockey.png'%}" alt="">Hockey</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                         <!-- membuat ESPN sites -->
+                    <div class=" ">
+                        <div class="bg-white rounded pl-1 pt-1 pr-0 mt-3 ml-3 mr-0 ">
+                            <table>
+                                <tr class="bold huruf-samping"> 
+                                    <td > ESPN Sites</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td class=" huruf-samping"> <img class="gambar-ikon p-1" src="{%static 'images/espn-icon.png'%}" alt="">ESPN Deportes</td>
+                                </tr>
+                                <tr>
+                                    <td class=" huruf-samping"> <img class="gambar-ikon p-1" src="{%static 'images/undefeated.png'%}" alt="">The Undefeated</td>
+                                </tr>
+                                <tr>
+                                    <td class=" huruf-samping"> <img class="gambar-ikon p-1" src="{%static 'images/espnW.png'%}" alt="">espnW</td>
+                                </tr>
+                                <tr>
+                                    <td class=" huruf-samping"> <img class="gambar-ikon p-1" src="{%static 'images/espnFC.png'%}" alt="">ESPNFC</td>
+                                </tr>
+                                <tr>
+                                    <td class=" huruf-samping"> <img class="gambar-ikon p-1" src="{%static 'images/xgames.png'%}" alt="">X Games</td>
+                                </tr>
+                                <tr>
+                                    <td class=" huruf-samping"> <img class="gambar-ikon p-1" src="{%static 'images/sec.png'%}" alt="">SEC Network</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                        <!-- membuat ESPN Podcast -->
+                        <div class=" ">
+                            <div class="bg-white rounded pl-1 pt-1 pr-0 mt-3 ml-3 mr-0 ">
+                                <table>
+                                    <tr class="bold huruf-samping"> 
+                                        <td > Podcasts</td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td class=" huruf-samping"> <img class="gambar-ikon p-1" src="{%static 'images/bola.png'%}" alt="">ESPN FC TV</td>
+                                    </tr>
+                                    <tr>
+                                        <td class=" huruf-samping"> <img class="gambar-ikon p-1" src="{%static 'images/bola.png'%}" alt="">Caught Offside</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        
+                            <!-- membuat Follow ESPN FC -->
+                        <div class=" ">
+                            <div class="bg-white rounded pl-1 pt-1 pr-0 mt-3 ml-3 mr-0">
+                                <table>
+                                    <tr class="bold huruf-samping"> 
+                                        <td >Follow ESPN</td>
+                                    </tr>
+                                    <tr>
+                                        <td class=" huruf-samping"> <img class="gambar-ikon p-1" src="{%static 'images/facebook.png'%}" alt="">Facebook</td>
+                                    </tr>
+                                    <tr>
+                                        <td class=" huruf-samping"> <img class="gambar-ikon p-1" src="{%static 'images/logo-twitter.png'%}" alt="">Twitter</td>
+                                    </tr>
+                                    <tr>
+                                        <td class=" huruf-samping"> <img class="gambar-ikon p-1" src="{%static 'images/instagram.png'%}" alt="">Instagram</td>
+                                    </tr>
+                                    <tr>
+                                        <td class=" huruf-samping"> <img class="gambar-ikon p-1" src="{%static 'images/snapchat.png'%}" alt="">Snapchat</td>
+                                    </tr>
+                                    <tr>
+                                        <td class=" huruf-samping"> <img class="gambar-ikon p-1" src="{%static 'images/youtube.png'%}" alt="">You Tube</td>
+                                    </tr>
+                                    <tr>
+                                        <td class=" huruf-samping"> <img class="gambar-ikon p-1" src="{%static 'images/espn-letter.png'%}" alt="">The ESPN Daily News Letter</td>
+                                    </tr>
+                                    <tr>
+                                        <td class=" huruf-samping"> <img class="gambar-ikon p-1" src="{%static 'images/espn-calendar.png'%}" alt="">ESPN Daily Calendar</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- membuat kolom tengah -->
+                    <div class="col-6"> 
+                        <div class="container-fluid">
+                           <div class="bg-white rounded pl-0 pt-1 pr-0 mt-3 ml-0 mr-0">
+                               
+                                    <div>
+                                        <img src="{%static 'images/warriors.png'%}" alt="" class="float-left gambar-ikon p-2 !important">
+                                    </div>
+                                    <div>
+                                        <a class="float-right p-2" href="">See all</a>
+                                    </div>
+                               
+                                <div>
+                                    <img src="{%static 'images/curry.jpg'%}" class="rounded-top img-fluid p-2 !important" alt="">
+                                </div>
+                                <div class="p-2">
+                                    <h5>House Party, tactics, new babies: Inside Arsenal's lockdown</h5>
+                                    <p class="huruf-samping">It's been nearly a month since the Premier League Shutdown due to corona virus. Here's what player doing to keep fit and busy at Arsenal. <br>
+                                    21h &bull; nama</p>
+                                </div>                        
+                                <div class="card rounded-top">
+                                    <video width="100%" controls> <source src="{%static 'images/kobe.mp4'%}"> </video>
+                                    <div class="card-body">
+                                    <h5 class="card-title">Best of Kobe's</h5>
+                                    <p class="card-text huruf-samping"> Remembering Kobe's greatest career <br> 16hr</p>
+                                    </div>
+                                </div>                                                              
+                            </div>
+                        </div>    
+                                            
+                        <div class="container-fluid">
+                            <div class="bg-white rounded mt-3 ">
+                                <div>
+                                    <div>
+                                        <img src="{%static 'images/warriors.png'%}" alt="" class="float-left gambar-ikon p-2 !important">
+                                    </div>
+                                    <div>
+                                        <a class="float-right p-2" href="">See all</a>
+                                    </div>
+                                </div>
+                                <div>
+                                    <img src="{%static 'images/curry.jpg'%}" class="rounded-top img-fluid p-2 !important" alt="">
+                                </div>
+                                <div class="p-2">
+                                    <h5>House Party, tactics, new babies: Inside Arsenal's lockdown</h5>
+                                    <p class="huruf-samping">It's been nearly a month since the Premier League Shutdown due to corona virus. Here's what player doing to keep fit and busy at Arsenal. <br>
+                                    21h &bull; nama</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-fluid">
+                            <div class="bg-white rounded mt-3 ">
+                                <div>
+                                    <div>
+                                        <img src="{%static 'images/warriors.png'%}" alt="" class="float-left gambar-ikon p-2 !important">
+                                    </div>
+                                    <div>
+                                        <a class="float-right p-2" href="">See all</a>
+                                    </div>
+                                </div>
+                                <div>
+                                    <img src="{%static 'images/curry.jpg'%}" class="rounded-top img-fluid p-2 !important" alt="">
+                                </div>
+                                <div class="p-2">
+                                    <h5>House Party, tactics, new babies: Inside Arsenal's lockdown</h5>
+                                    <p class="huruf-samping">It's been nearly a month since the Premier League Shutdown due to corona virus. Here's what player doing to keep fit and busy at Arsenal. <br>
+                                    21h &bull; nama</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-fluid">
+                            <div class="bg-white rounded mt-3 ">
+                                <div>
+                                    <div>
+                                        <img src="{%static 'images/warriors.png'%}" alt="" class="float-left gambar-ikon p-2 !important">
+                                    </div>
+                                    <div>
+                                        <a class="float-right p-2" href="">See all</a>
+                                    </div>
+                                </div>
+                                <div>
+                                    <img src="{%static 'images/curry.jpg'%}" class="rounded-top img-fluid p-2 !important" alt="">
+                                </div>
+                                <div class="p-2">
+                                    <h5>House Party, tactics, new babies: Inside Arsenal's lockdown</h5>
+                                    <p class="huruf-samping">It's been nearly a month since the Premier League Shutdown due to corona virus. Here's what player doing to keep fit and busy at Arsenal. <br>
+                                    21h &bull; nama</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-fluid">
+                            <div class="bg-white rounded mt-3 ">
+                                <div>
+                                    <div>
+                                        <img src="{%static 'images/warriors.png'%}" alt="" class="float-left gambar-ikon p-2 !important">
+                                    </div>
+                                    <div>
+                                        <a class="float-right p-2" href="">See all</a>
+                                    </div>
+                                </div>
+                                <div>
+                                    <img src="{%static 'images/curry.jpg'%}" class="rounded-top img-fluid p-2 !important" alt="">
+                                </div>
+                                <div class="p-2">
+                                    <h5>House Party, tactics, new babies: Inside Arsenal's lockdown</h5>
+                                    <p class="huruf-samping">It's been nearly a month since the Premier League Shutdown due to corona virus. Here's what player doing to keep fit and busy at Arsenal. <br>
+                                    21h &bull; nama</p>
+                                </div>
+                            </div>
+                        </div>
+                       
+                    </div>
+                    <!-- membuat kolom kanan -->
+                    <div class="col-3">
+                        <div class="">
+                            <div class="bg-white rounded pl-0 pt-1 mt-3 ml-0 mr-3">
+                                <table>
+                                    <tr class="bold huruf-samping"> 
+                                        <td >Top Headlines</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="huruf-samping"> &bull; Messi labe's Inter rumours, Ronaldinho bail 'lies'</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="huruf-samping"> &bull; Liverpool legend Dalglish tests positive for virus</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="huruf-samping"> &bull; Barcelona threaten legal action over theft claims</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="huruf-samping"> &bull; Norwich sign player after placing staff on furlough</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="huruf-samping"> &bull; Oladipo using time off to host instagram concerts</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="huruf-samping"> &bull; Source: NBA teams unite, want delayed draft</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="huruf-samping"> &bull; Mayweather: 'I will be one of the best trainers'</td>
+                                    </tr>
+                                  
+                                </table>
+                            </div> 
+                        </div>
+                        <div class="">
+                            <div class="bg-white rounded pl-0 pt-1 mt-3 ml-0 mr-3">
+                                <table>
+                                    <tr>
+                                        <td class="bold">Sponsored Content</td>
+                                    </tr>
+                                    <tr>
+                                        <td> <img src="{%static 'images/mas-boi.'%}" alt="" class="img-fluid"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="huruf-samping"> &bull; Liverpool legend Dalglish tests positive for virus</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="huruf-samping"> &bull; Barcelona threaten legal action over theft claims</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="huruf-samping"> &bull; Norwich sign player after placing staff on furlough</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="huruf-samping"> &bull; Oladipo using time off to host instagram concerts</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="huruf-samping"> &bull; Source: NBA teams unite, want delayed draft</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="huruf-samping"> &bull; Mayweather: 'I will be one of the best trainers'</td>
+                                    </tr>
+                                  
+                                </table>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+                {% endblock %}
