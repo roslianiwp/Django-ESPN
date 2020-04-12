@@ -6,6 +6,7 @@ from django.contrib.auth.forms import UserCreationForm
 from django.shortcuts import render, redirect
 from django.core.paginator import Paginator
 from django.views.generic import ListView
+from django.db.models import Q
 
 
 # Create your views here.
@@ -18,15 +19,16 @@ def artikel(request):
 
     return render(request, 'artikel.html',{'page_obj':page_obj})
 
-def search(request):
-    searchValue = ''
-    form = Search(request.POST or None)
-    if form.is_valid():
-        searchValue = form.cleaned_data.get('search')
+class SearchResultsView(ListView):
+    model = Artikel
+    template_name = 'search.html'
 
-    searchResult = Artikel.objects.filter(judul__icontains=searchValue) 
-    context = {'form':form, 'searchResult': searchResult}
-    return render(request, 'search.html', context)
+    def get_queryset(self):
+        query = self.request.GET.get('q')
+        object_list = Artikel.objects.filter(
+            Q(judul__icontains=query) | Q(kategori_artikel__kategori_artikel__icontains=query)
+        )
+        return object_list
 
 def home(request):
     return render(request, 'index_espn.html')
