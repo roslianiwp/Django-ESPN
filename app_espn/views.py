@@ -42,8 +42,7 @@ def artikel(request):
     
 #     return render(request, 'index_espn.html', {'query': query_list})
 
-def home(request):
-    return render(request, 'index_espn.html')
+
 
 
 def signup(request):
@@ -59,3 +58,23 @@ def signup(request):
     else:
         form = UserCreationForm()
     return render(request, 'signup.html', {'form_signup': form})
+def home(request):
+    return render(request, 'index_espn.html')
+
+def football(request):
+    return render(request, 'football.html')
+
+def nba(request):
+    return render(request, 'NBA.html')
+
+def nfl(request):
+    return render(request, 'NFL.html')
+
+def cricket(request):
+    return render(request, 'Cricket.html')
+
+def rugby(request):
+    return render(request, 'Rugby.html')
+
+def golf(request):
+    return render(request, 'golf.html')
