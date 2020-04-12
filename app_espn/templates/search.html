@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content%}
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-10 pl-5 mt-5">
+            {% for artikel in searchResult %}
+            <h2>{{artikel.judul}}</h2>
+            <img src="{{artikel.gambar.url}}">
+            <p>{{artikel.konten}}</p>
+            {%endfor%}
+        </div>
+    </div>
+</div> 
+
+{%endblock%}
