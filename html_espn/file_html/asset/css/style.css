@@ -51,4 +51,7 @@
   .dropdown-content a:hover {background-color:red;}
   
   .dropdown:hover .dropdown-content {display: block;}
-  
+  /* .tombol-editions :hover{
+      background-color: white;
+      border-color: black;
+  } */
