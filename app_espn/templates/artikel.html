@@ -1,68 +1,78 @@
+{% extends 'base.html' %}
 {% load static %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-<body>
+{% block content%}
     <section class="all-in">
-        <div class="container-fluid">
-                <div class="row">
-                    <div class="col-sm-3 col-offset-1">
-                        {% for artikel in artikels %}
-                        <section class="judul-artikel">
-                            <h6 class="text-justify">{{artikel.judul}}</h6>
-                        </section>
-                        {% endfor %}
-                    </div>
-                    <div class="col-sm-7 pl-5">
-                        {% for artikel in artikels%}
-                        <section class="judul-artikel">
-                            <div class="row">
-                                <div class="judul-berita mb-4 ml-5">
-                                    <h4>{{artikel.judul}}</h4>
-                                </div>
-                                <div class="row">
-                                    <div class="col-sm-1"></div>
-                                    <div class="col-sm-1 author ml-4">
-                                     <img src="../static/images/foto.jpg" class="rounded-circle" style=" height: 40px; width: 40px;">
-                                    </div>
-                                    <div class=" col-sm-5 author-bio" style="padding-left:20px">
-                                        <span>{{artikel.author}}<br>
-                                        ESPN Senior Writer</span>
-                                        <hr style="width:528px">
-                                    </div>
-                                </div>  
-                            </div>
-                        </section>
-                        <section>
-                        <div class="row">
-                            <div style="position: fixed;">
-                                <div class="col-sm-1">
-                                    <a href="https://www.facebook.com" class="fa fa-facebook"></a>
-                                    <a href="https://www.twitter.com" class="fa fa-twitter"></a>
-                                    <a href="https://www.google.com" class="fa fa-google"></a>
-                                    <a href="https://www.linkedin.com" class="fa fa-linkedin"></a>
-                                    <a href="https://www.instagram.com" class="fa fa-instagram"></a>
-                                    <a href="https://www.pinterest.com" class="fa fa-pinterest"></a>
-                                </div>
-                            </div>
-                            <div class="col-sm-11 ml-5">
-                                <img src="{{artikel.gambar.url}}" class="img-fluid">
-                                <p>
-                                    {{artikel.konten}}
-                                </p>
-                            </div>
-                        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3 col-offset-1">
+                    {% for artikel in page_obj %}
+                    <section class="judul-artikel mt-5">
+                        <h6 class="text-justify">{{artikel.judul}}</h6>
                     </section>
                     {% endfor %}
                 </div>
+                <div class="col-sm-7 ml-5">
+                    {% for artikel in page_obj%}
+                    <section class="judul-artikel mt-5">
+                        <div class="row">
+                            <div class="judul-berita mb-4 ml-5">
+                                <h4>{{artikel.judul}}</h4>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-1"></div>
+                                <div class="col-sm-1 author ml-4">
+                                    <img src="{{artikel.userwartawan.profile_pic.url}}" class="rounded-circle" style=" height: 40px; width: 40px;">
+                                </div>
+                                <div class=" col-sm-5 author-bio" style="padding-left:20px">
+                                    <strong>{{artikel.author}}<br>
+                                        ESPN Senior Writer</strong>
+                                        <br>
+                                        <span>{{artikel.published_date}}</span>
+                                    <hr style="width:528px">
+                                </div>
+                            </div>  
+                        </div>
+                    </section>
+                    <section>
+                    <div class="row">
+                        <div style="position: fixed;">
+                            <!-- <div class="col-sm-1">
+                                <a href="https://www.facebook.com" class="fa fa-facebook"></a>
+                                <a href="https://www.twitter.com" class="fa fa-twitter"></a>
+                                <a href="https://www.google.com" class="fa fa-google"></a>
+                                <a href="https://www.linkedin.com" class="fa fa-linkedin"></a>
+                                <a href="https://www.instagram.com" class="fa fa-instagram"></a>
+                                <a href="https://www.pinterest.com" class="fa fa-pinterest"></a>
+                            </div> -->
+                        </div>
+                        <div class="col-sm-11 ml-5">
+                            <img src="{{artikel.gambar.url}}" class="img-fluid">
+                            <p>
+                                {{artikel.konten|slice:":200"}}
+                            </p>
+                            <a href="{{artikel.pk}}">Read More...</a>
+                        </div>
+                    </div>
+                </section>
+                {% endfor %}
+                <div class="pagination mb-5">
+                    <span class="step-links">
+                        {% if page_obj.has_previous %}
+                            <a href="?page=1">&laquo; first</a>
+                            <a href="?page={{ page_obj.previous_page_number }}">previous</a>
+                        {% endif %}
+                
+                        <span class="current">
+                            Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}.
+                        </span>
+                
+                        {% if page_obj.has_next %}
+                            <a href="?page={{ page_obj.next_page_number }}">next</a>
+                            <a href="?page={{ page_obj.paginator.num_pages }}">last &raquo;</a>
+                        {% endif %}
+                    </span>
+                </div>
+            </div>
         </div>
-            
     </section>
-    </body>
-
-</html>
+{% endblock %}

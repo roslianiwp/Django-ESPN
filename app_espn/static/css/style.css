@@ -8,10 +8,25 @@
 }
 
 #button-in{
-    width: 200px;
-    height: 40px;
+    min-width: 150px;
+    min-height: 25px;
     border-radius: 25px;
 }
+
+/* tombol search */
+input[type=text] {
+  width: 100px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+/* When the input field gets focus, change its width to 100% */
+input[type=text]:focus {
+  width: 400px;
+  z-index: 999;
+}
+
+
 
 .bold{
     font-weight: bold;
@@ -103,3 +118,15 @@ color: white;
 }
 
   
+.espn{
+  background-color: red;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+.bg-navbar{
+  background-color: black;
+}
+.btn-nav{
+  color: grey;
+}

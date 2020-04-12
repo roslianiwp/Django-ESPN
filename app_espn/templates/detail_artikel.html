@@ -1,0 +1,77 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content%}
+    <section class="all-in">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-10 pl-5 mt-5">
+                    <section class="judul-artikel">
+                        <div class="row">
+                            <div class="judul-berita mb-4 ml-5">
+                                <h4>{{artikels.judul}}</h4>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-1"></div>
+                                <div class="col-sm-1 author ml-4">
+                                    <img src="../static/images/foto.jpg" class="rounded-circle" style=" height: 40px; width: 40px;">
+                                </div>
+                                <div class=" col-sm-5 author-bio" style="padding-left:20px">
+                                    <strong>{{artikels.author}}<br>
+                                    ESPN Senior Writer</strong>
+                                    <br>
+                                    <span>{{artikels.published_date}}</span>
+                                    <hr style="width:528px">
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="like">
+                                        <strong>
+                                            <a href="/artikel/clap/{{artikels.id}}">
+                                                <img src="{% static 'images/jempol.png'%}" style="width: 30px; height: 30px;">
+                                            </a>
+                                            <span>{{artikels.clap}} likes</span>
+                                        </strong>
+                                    </div>
+                                </div>
+                            </div>  
+                        </div>
+                    </section>
+                    <section>
+                    <div class="row">
+                        <div style="position: fixed;">
+                            <!-- <div class="col-sm-1">
+                                <a href="https://www.facebook.com" class="fa fa-facebook"></a>
+                                <a href="https://www.twitter.com" class="fa fa-twitter"></a>
+                                <a href="https://www.google.com" class="fa fa-google"></a>
+                                <a href="https://www.linkedin.com" class="fa fa-linkedin"></a>
+                                <a href="https://www.instagram.com" class="fa fa-instagram"></a>
+                                <a href="https://www.pinterest.com" class="fa fa-pinterest"></a>
+                            </div> -->
+                        </div>
+                        <div class="col-sm-11 ml-5">
+                            <img src="{{artikels.gambar.url}}" class="img-fluid">
+                            <p>
+                                {{artikels.konten}}
+                            </p>
+                            <hr style="width:528px">
+                            <h4>Comments</h4>
+                            {%for komen in artikels.komen_set.all %}
+                            <div class="comment">
+                                <strong>{{komen.netizen}}</strong>
+                                <span>{{komen.tgl_komen}}</span>
+                                <p>{{komen.komen}}</p>
+                            </div>
+                            {%endfor%}
+                            <hr style="width:528px">
+                            <h4>Comment Here</h4>
+                            <form action ="" method="post" enctype="multipart/form-data" style="margin-bottom: 30px;">
+                                {% csrf_token %}
+                                <textarea class="form-control" name="commenttt" id="exampleFormControlTextarea1" rows=3></textarea>
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                              </form>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </section>
+{% endblock %}

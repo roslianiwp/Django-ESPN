@@ -37,6 +37,7 @@ class Artikel(models.Model):
     kategori_artikel= models.ForeignKey(Kategori, on_delete=models.CASCADE)
     gambar = models.FileField(upload_to='')
     konten = models.TextField()
+    clap = models.IntegerField(default=0)
 
     def __str__(self):
         return f"{self.judul}"
