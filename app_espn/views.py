@@ -8,7 +8,6 @@ from django.core.paginator import Paginator
 from django.views.generic import ListView
 from django.db.models import Q
 
-
 # Create your views here.
 
 def artikel(request):
@@ -61,7 +60,6 @@ def artikel_detail(request, artikel_id):
             tgl_komen = '2020-04-10',
         )
         cm.save()
-
     return render(request, 'detail_artikel.html', {'artikels':artikels, 'post_active':True})
 
 def artikel_detail_add_like(request, artikel_id):
