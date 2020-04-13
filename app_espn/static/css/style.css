@@ -128,3 +128,8 @@ color: white;
   padding: 0;
   margin: 0;
 }
+.teks-style{
+  text-decoration: none;
+  font-style: inherit;
+  color: black;
+}
